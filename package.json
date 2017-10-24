@@ -1,0 +1,25 @@
+{
+  "name": "html5pro",
+  "version": "0.0.1",
+  "description": "This project follows Practical HTML5 course from Pluralsight website",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnergeticPixels/html5pro.git"
+  },
+  "keywords": [
+    "html5",
+    "pluralsight",
+    "joes",
+    "coffeeshop"
+  ],
+  "author": "Anthony Jackman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EnergeticPixels/html5pro/issues"
+  },
+  "homepage": "https://github.com/EnergeticPixels/html5pro#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
