@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
 	<link href='styles/layout.css' rel='stylesheet' />
+	<script src='js/videoPlayer.js'></script>
 </head>
 <body>
 	<header>
@@ -14,8 +15,27 @@
 				<img src='images/logo.png' />
 			</a>
 			<span id='headername'>Joe's Coffee Store</span>
+			<input type='search' class='searchbox' placeholder='Search our store' />
 		</div>
+		<nav class='backgroundgradient'>
+			<ul>
+				<li><a class='navlink' href='index.html'>Home </a></li>
+				<li><a class='navlink' href='blog.html'>Blog</a></li>
+				<li><a class='navlink' href='allcoffees.html'>Our Coffees</a></li>
+				<li><a class='navlink' href='accessories.html'>Accessories</a></li>
+				<li><a class='navlink' href='Gifts.html'>Gifts</a></li>
+				<li><a class='navlink' href='findus.html'>Find Us</a></li>
+				<li><a class='navlink' href='checkout.html'>Checkout</a></li>
+			</ul>
+		</nav>
 	</header>
+
+	<div id='welcomeimage'>
+		<img src='images/coffeeheader.jpg' />
+	</div>
+	<div id='coffeeofthemonth'>
+		<img src='images/cotm.jpg' />
+	</div>
 	
 	<section class='coffeedetails'>
 		<header class='blockheader'>
@@ -29,7 +49,34 @@
 			<p class='productarticledescription'>Officia eu proident sunt aliquip reprehenderit adipisicing veniam sint aliqua. Esse aute non excepteur duis Lorem. Ex nisi cillum culpa veniam ipsum aute veniam fugiat sunt labore ipsum aute. Incididunt et esse sit ipsum. Dolor eiusmod esse consectetur et sint aliqua incididunt nostrud nostrud amet esse tempor id nostrud.</p>
 			<p class='productarticleprice'>&euro;10</p>
 		</div>
+
+		<div>
+			<video width="320" height="240" class="coffeevideoplayer" id="videoPlayer" poster="images/logo.png">
+				<source src='videos/movie.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+				<source src='video/movie.ogg' type='video/ogg; codecs="theora, vorbis"' />
+				Sadly your browser has no support for video...
+			</video>
+			<div id='controls'>
+				<div id='errorDiv' style='color: Red;'></div>
+				<button id='slowerButton'>Slower</button>
+				<button id='backButton'>Rewind</button>
+				<button id='playButton'>Play</button>
+				<button id='forwardButton'>Forward</button>
+				<button id='fasterButton'>Faster</button>
+				<button id='muteButton'>Mute</button>
+				<br /><br /><br />
+			</div>
+		</div>
 	</section>
+
+	<footer>
+		<p>Our address is <address>65 New Stree, 91234 Long Bean</address></p>
+		<p class='textcontent'>All site contents is copyright <a class='mainlink' href='http://www.somewebsite.com'>Joe's Coffee Store</a></p>
+		<p class='smalltext'>This page was generated on <time>09:25:04.123</time>.</p>
+	</footer>
+
+	<script>
+	document.addEventListener("DOMContentLoaded", initializeVideoPlayerControls, false);</script>
 	
 </body>
 </html>
