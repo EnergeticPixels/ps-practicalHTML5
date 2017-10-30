@@ -7,6 +7,7 @@
 	<title>Document</title>
 	<link href='styles/layout.css' rel='stylesheet' />
 	<script src='js/videoPlayer.js'></script>
+	<script src='js/canvasChart.js'></script>
 </head>
 <body>
 	<header>
@@ -69,6 +70,12 @@
 		</div>
 	</section>
 
+	<div id='salesCanvasGraph'>
+		<canvas id='barChart' height='800' width='750'>
+			Sorry, your browser doesn't support canvas, therefore you can't see this chart! please upgrade your browser.
+		</canvas>
+	</div>
+
 	<footer>
 		<p>Our address is <address>65 New Stree, 91234 Long Bean</address></p>
 		<p class='textcontent'>All site contents is copyright <a class='mainlink' href='http://www.somewebsite.com'>Joe's Coffee Store</a></p>
@@ -76,7 +83,9 @@
 	</footer>
 
 	<script>
-	document.addEventListener("DOMContentLoaded", initializeVideoPlayerControls, false);</script>
+	document.addEventListener("DOMContentLoaded", initializeVideoPlayerControls, false);
+	document.addEventListener("DOMContentLoaded", drawChart, false);
+	</script>
 	
 </body>
 </html>
